@@ -6,7 +6,6 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import VideoPlayer from "./VideoPlayer";
 import { useRef } from "react";
-import CustomPlayer from "./CustomPlayer";
 
 function App() {
   const playerRef = useRef(null);
@@ -42,7 +41,6 @@ function App() {
         <h1>Video player</h1>
       </div>
       <VideoPlayer options={videoPlayerOptions} onReady={handlePlayerReady} />
-      {/* <CustomPlayer /> */}
     </>
   );
 }
